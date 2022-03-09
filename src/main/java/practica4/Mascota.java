@@ -5,11 +5,13 @@
  */
 package practica4;
 
+import practica4.Interfaz.ISonido;
+
 /**
  *
  * @author Juan Llado
  */
-public  class Mascota implements ISonido{
+public  class Mascota implements ISonido {
     private String nombre;
     private int edad;
 

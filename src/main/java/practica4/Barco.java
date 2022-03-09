@@ -5,13 +5,15 @@
  */
 package practica4;
 
+import practica4.Interfaz.ISonido;
+
 import java.util.Date;
 
 /**
  *
  * @author Juan Llado
  */
-public class Barco implements ISonido{
+public class Barco implements ISonido {
     
     private Adulto dueño;
     private String nombreBarco;
