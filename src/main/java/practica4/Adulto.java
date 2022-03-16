@@ -15,6 +15,7 @@ public class Adulto extends Persona{
     private Perro perro;
     private Gato gato;
     private Barco embarcacion;
+    private Niño hijo;
 
     public Adulto(String NSS, String direccion) {
         this.NSS = NSS;
@@ -41,7 +42,12 @@ public class Adulto extends Persona{
     public String toString() {
         return "Adulto{" + "NSS=" + NSS + ", direccion=" + direccion + '}';
     }
-    
-    
-    
+
+    public Niño getHijo() {
+        return hijo;
+    }
+
+    public void setHijo(Niño hijo) {
+        this.hijo = hijo;
+    }
 }
