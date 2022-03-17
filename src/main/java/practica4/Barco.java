@@ -15,21 +15,12 @@ import java.util.Date;
  */
 public class Barco implements ISonido {
     
-    private Adulto dueño;
+    private Adulto propietario;
     private String nombreBarco;
     private Date fechaConstruccion;
     private int numCamarotes;
     private Motor motor;
 
-    /**
-     * 
-     * @param nombreBarco
-     * @param fechaConstruccion
-     * @param numCamarotes
-     * @param fabricante
-     * @param codigo
-     * @param potencia 
-     */
     public Barco(String nombreBarco, Date fechaConstruccion, int numCamarotes, String fabricante, int codigo, String potencia) {
         this.nombreBarco = nombreBarco;
         this.fechaConstruccion = fechaConstruccion;
@@ -48,17 +39,17 @@ public class Barco implements ISonido {
      * 
      * @return dueño
      */
-    public Adulto getDueño() {
-        return dueño;        
+    public Adulto getPropietario() {
+        return propietario;
     }
 
     /**
      * 
      * 
-     * @param dueño 
+     * @param propietario
      */
-    public void setDueño(Adulto dueño) {
-        this.dueño = dueño;
+    public void setPropietario(Adulto propietario) {
+        this.propietario = propietario;
     }
 
     public String getNombreBarco() {
@@ -95,7 +86,7 @@ public class Barco implements ISonido {
 
     @Override
     public String toString() {
-        return "Barco{" + "due\u00f1o=" + dueño + ", nombreBarco=" + nombreBarco + ", fechaConstruccion=" + fechaConstruccion + ", numCamarotes=" + numCamarotes + ", motor=" + motor + '}';
+        return "Barco{" + "due\u00f1o=" + propietario + ", nombreBarco=" + nombreBarco + ", fechaConstruccion=" + fechaConstruccion + ", numCamarotes=" + numCamarotes + ", motor=" + motor + '}';
     }
 
     
